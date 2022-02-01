@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+        {% for pic in pics %}
+        <a href="{% url 'app1:descriptions' pic.id  %}">
+        <img src="{{pic.Image.url}}" height="250"  width="250">
+            </a>
+        {% endfor %} 
+    
+         
+    {% endblock %}

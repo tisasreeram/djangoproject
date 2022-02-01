@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+        <img src="{{desc.Image.url}}" height="250"  width="250"><br>
+        Car:{{desc.Car}}<br>
+        Brand:{{desc.Brand}}<br>
+        Details:{{desc.Details}}<br>
+       {% endblock %}
